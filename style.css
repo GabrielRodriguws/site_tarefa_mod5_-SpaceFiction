@@ -51,68 +51,80 @@ header{
 /* sessão de destaque */
 #destaque {
     width: 100%;
-    display: block;                       /* Garante que a seção ocupe toda a largura disponível */
-    background-size: cover;                /* Faz a imagem de fundo cobrir toda a área da seção */
-    background-position: center;           /* Centraliza a imagem de fundo */
-    padding-top: 400px;
-    height: 800px;
+    display: block;                       
+    background-size: cover;                
+    background-position: center;           
+    padding-top: 540px;
+    height: 850px;
 }
 
 #destaque h2 {
     color: aliceblue;
-    text-align: flex-end;                    /* Centraliza o título */
-    text-shadow: 1px 1px 8px #000;         /* Sombra para melhor leitura sobre o fundo */
+    text-align: flex-end;                    
+    text-shadow: 1px 1px 8px #000; 
+    font-size: 38px;        
 }
+
 
 .card {
     max-width: 1366px;
     width: 100%;
-    display: flex;                         /* Coloca imagem e texto lado a lado */
-    align-items: left;                   /* Alinha verticalmente ao centro */
+    display: flex;                         
+    align-items: flex-end;                  
     justify-content: flex-end;  
     margin: 0 auto;
-    gap: 32px;                             /* Espaço entre imagem e texto */                 
+    gap: 32px;                                              
 }
 
 
 .card img {
     max-width: 300px;
     min-width: 100px;
-    object-fit: cover;                     /* Garante que a imagem preencha o espaço sem distorcer */
-    border-radius: 12px;                   /* Bordas arredondadas na imagem */
-    box-shadow: 0 2px 8px rgba(0,0,0,0.18);/* Sombra suave na imagem */
+    object-fit: cover;                     
+    border-radius: 8px;                   
 }
 
+
 .card p {                  
-    color: aliceblue;                    
+    color: aliceblue;    
+    padding-bottom: 90px;
+    font-weight: bold;
+    font-size: 20px;
+    text-shadow: 1px 1px 8px #000;
 }
 
 
 /* sessão mais recomendações */
 #more {
-    display: flex;                /* Faz com que os elementos filhos (cards) fiquem lado a lado */
-    justify-content: center;      /* Centraliza os cards horizontalmente na seção */
-    gap: 32px;                    /* Espaço de 32px entre cada card */
-    padding: 40px 0;              /* Espaço interno acima e abaixo da seção */
-    background: #111; 
-    padding-top: 100px;            /* Cor de fundo escura para destacar a seção (opcional) */
+    background-color: #29343A; 
+    padding-top: 100px;
+}
+
+.section_more{
+    display: flex;               
+    justify-content: center;
+    max-width: 1366px;
+    width: 100%;
+    margin: 0 auto;
 }
 
 .cards {
-    background: #222;           /* Cor de fundo dos cards, um pouco mais clara que a seção */
-    border-radius: 12px;          /* Bordas arredondadas nos cards */
-    box-shadow: 0 2px 8px rgba(0,0,0,0.15); /* Sombra suave para dar profundidade */
-    padding: 24px;                /* Espaço interno dentro do card */
-    width: 280px;                 /* Largura fixa para cada card */
-    display: flex;                /* Permite alinhar conteúdo interno em coluna */
-    flex-direction: column;       /* Organiza o conteúdo do card em coluna (imagem, título, texto) */
-    align-items: center;          /* Centraliza o conteúdo do card horizontalmente */
+    background-color: #1C1C1C;
+    color: aliceblue;
+    border-radius: 12px;          
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15); 
+    padding: 24px;                           
+    display: flex;                
+    align-items: center; 
+    width: 30%;
+    margin: 15px;
 }
 
 .cards img {
-    width: 100%;                  /* Imagem ocupa toda a largura do card */
-    height: 160px;                /* Altura fixa para a imagem */
-    object-fit: cover;            /* Garante que a imagem preencha o espaço sem distorcer */
-    border-radius: 8px 8px 0 0;   /* Bordas arredondadas apenas na parte superior da imagem */
-    margin-bottom: 16px;          /* Espaço abaixo da imagem */
+    width: 100%;
+    height: 100%;
+    max-height: 300px;
+    object-fit: cover;           
+    border-radius: 8px;
+    margin-bottom: 16px;          
 }
