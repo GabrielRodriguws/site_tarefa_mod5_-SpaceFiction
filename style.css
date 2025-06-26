@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 /*google fonts*/
 .bungee-regular{
     font-family: "Bungee", sans-serif;
@@ -42,6 +46,8 @@ header{
     width: 100%;
     margin: 0 auto;
     font-family: 'Orbitron';
+    padding-bottom: 10px;
+    padding-top: 10px;
 }
 
 .menu li{
@@ -189,7 +195,7 @@ header{
 .cards:hover{
     border-style: double;
     border-color: midnightblue;
-    box-shadow: 0 0 44px 8px rgba(25,25,112,0.5);
+    box-shadow: 0 0 44px 8px midnightblue;
     transition: 1s;
     cursor: pointer;
 }
@@ -207,6 +213,120 @@ header{
     text-decoration: none;
     color: inherit;
 }
+
+/* seção de contato */
+#contato{
+    background-color: #1C1C1C;
+}
+
+.contato{
+    max-width: 1366px;
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+ul{
+    list-style: none;
+}
+
+
+.contato div{
+    display: block;
+    width: 20%;
+    text-align: center;
+}
+
+.contato div input,
+.contato div textarea{
+    width: 100%;
+    background-color: inherit;
+    border-style: solid;
+    border-radius: 4px;
+    border-color: #292929;
+    color: aliceblue;
+}
+
+.contato div textarea:hover{
+    background-color: inherit;
+    border-style: double;
+    border-radius: 4px;
+    border-color: midnightblue;
+    color: aliceblue;
+    transition: 0.7s;
+}
+
+.contato div input:hover{
+    background-color: inherit;
+    border-style: double;
+    border-radius: 4px;
+    border-color: midnightblue;
+    color: aliceblue;
+    transition: 0.7s;
+}
+
+.contato div textarea:focus{
+    background-color: inherit;
+    border-style: double;
+    border-radius: 4px;
+    border-color: midnightblue;
+    box-shadow: 0 0 12px 8px midnightblue;
+    color: aliceblue;
+    transition: 0.7s;
+}
+
+.contato div input:focus{
+    background-color: inherit;
+    border-style: double;
+    border-radius: 4px;
+    border-color: midnightblue;
+    box-shadow: 0 0 12px 8px midnightblue;
+    color: aliceblue;
+    transition: 0.7s;
+}
+
+.contato li{
+    margin-bottom: 12px;
+    border-style: none;
+}
+
+.contato input{
+    height: 30px;
+}
+
+.contato textarea{
+    height: 80px;
+    resize: vertical;
+}
+
+.contato button{
+    width: 30%;
+    display: block;
+    margin-left: 0;
+    margin-right: auto;
+    background-color: inherit;
+    border-style: double;
+    border-radius: 6px;
+    border-color: #292929;
+    color: aliceblue;
+    cursor: pointer;
+    height: 30px;
+}
+
+.contato button:hover{
+    background-color: rgb(255, 252, 76); /* Fundo azul */
+    color: aliceblue; /* Texto claro */
+    box-shadow: 0 0 90px 40px rgb(255, 254, 171); /* Sombra azul */
+    border-radius: 6px; /* Bordas arredondadas */
+    transition: all 0.2s; /* Transição suave */
+    border-style: solid; /* Borda dupla ao redor */
+    border-color: rgb(255, 252, 91);
+}
+
 
 /* rodape da pagiona */
 .rodape{
