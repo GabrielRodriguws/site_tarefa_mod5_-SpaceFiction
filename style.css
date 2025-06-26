@@ -30,7 +30,6 @@ header{
     background-color: rgba(0, 0, 0, 0.959); 
     color: aliceblue;
     width: 100%;
-    padding: 30px;
     justify-content: space-between;
     display: flex;
 }
@@ -46,18 +45,20 @@ header{
 }
 
 .menu li{
-    display: inline;
+    display: block;
     padding-right: 3px;
     padding: 5px;
+    padding-bottom: 10px;
+    text-align: left;
 }
 
 .menu ul{
     padding-right: 5px;
 }
 
-.menu h1{
+.menu img{
     padding-left: 10px;
-    font-family: 'Orbitron';
+    height: 120px;
 }
 
 .menu a{
@@ -230,7 +231,7 @@ header{
         text-align: center;
     }
     #destaque {
-        padding-top: 30px;
+        padding-top: 20px;
         height: auto;
         min-height: 320px;
     }
@@ -250,6 +251,15 @@ header{
     .destaque div {
         width: 100%;
         text-align: center;
+    }
+    #destaque h2,
+    #destaque p,
+    .destaque h2,
+    .destaque p {
+        text-shadow:
+            3px 3px 16px #000,
+            0 0 12px #000,
+            0 0 2px #000;
     }
     #more {
         padding-top: 20px;
@@ -285,5 +295,8 @@ header{
     }
     .cards h3, .cards p {
         text-align: center;
+    }
+    .card_link > div {
+        width: 100%;
     }
 }
