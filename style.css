@@ -241,8 +241,15 @@ ul{
     text-align: center;
 }
 
+.contato div h3{
+    margin-bottom: 15px;
+    font-size: 18px;
+    font-family: 'Orbitron';
+}
+
 .contato div input,
 .contato div textarea{
+    all: unset;
     width: 100%;
     background-color: inherit;
     border-style: solid;
@@ -253,39 +260,35 @@ ul{
 
 .contato div textarea:hover{
     background-color: inherit;
-    border-style: double;
+    border-style: solid;
     border-radius: 4px;
     border-color: midnightblue;
-    color: aliceblue;
     transition: 0.7s;
 }
 
 .contato div input:hover{
     background-color: inherit;
-    border-style: double;
+    border-style: solid;
     border-radius: 4px;
     border-color: midnightblue;
-    color: aliceblue;
     transition: 0.7s;
 }
 
 .contato div textarea:focus{
     background-color: inherit;
-    border-style: double;
+    border-style: solid;
     border-radius: 4px;
     border-color: midnightblue;
     box-shadow: 0 0 12px 8px midnightblue;
-    color: aliceblue;
     transition: 0.7s;
 }
 
 .contato div input:focus{
     background-color: inherit;
-    border-style: double;
+    border-style: solid;
     border-radius: 4px;
     border-color: midnightblue;
     box-shadow: 0 0 12px 8px midnightblue;
-    color: aliceblue;
     transition: 0.7s;
 }
 
@@ -294,13 +297,19 @@ ul{
     border-style: none;
 }
 
-.contato input{
+.contato div form ul li input{
     height: 30px;
 }
 
-.contato textarea{
+.contato div form ul li textarea{
     height: 80px;
     resize: vertical;
+}
+
+.contato img{
+    max-height: 40px;
+    height: 100%;
+    margin-bottom: 10px;
 }
 
 .contato button{
